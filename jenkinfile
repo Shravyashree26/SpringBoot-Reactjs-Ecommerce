@@ -30,7 +30,7 @@ pipeline {
                 docker rm ecommerce-backend || true
                 docker rm ecommerce-frontend || true
 
-                docker run -d --name ecommerce-backend -p 8081:8080 ecommerce-backend
+                docker run -d --name ecommerce-backend -p 8082:8080 ecommerce-backend
 
                 docker run -d --name ecommerce-frontend -p 5173:5173 ecommerce-frontend
                 '''
